@@ -146,7 +146,7 @@
                       <div class="inner-circle"></div>
                       <span class="inner-percentage">0%</span>
                     </div>
-                    <p class="title-s">HTML5</p>
+                    <p class="title-s">HTML</p>
                   </div>
 
                   <div class="skill-item">
@@ -154,7 +154,7 @@
                       <div class="inner-circle"></div>
                       <span class="inner-percentage">0%</span>
                     </div>
-                    <p class="title-s">CSS3</p>
+                    <p class="title-s">CSS</p>
                   </div>
 
                   <div class="skill-item">
@@ -162,7 +162,7 @@
                       <div class="inner-circle"></div>
                       <span class="inner-percentage">0%</span>
                     </div>
-                    <p class="title-s">C++</p>
+                    <p class="title-s">c++     </p>
                   </div>
 
                   <div class="skill-item">
@@ -383,10 +383,9 @@
 
     const cards = document.querySelector(".cards");
     const cardItems = document.querySelectorAll('.cards li');
-    const cardGap = 300; // Adjust this value to match your CSS gap
+    const cardGap = 300;
     let currentIndex = 0;
 
-    // Initialize the first card position
     updateCardPosition();
 
     function updateCardPosition() {
@@ -395,7 +394,6 @@
       const cardWidth = cardItems[targetIndex].offsetWidth;
       const halfCardWidth = cardWidth / 2;
 
-      // Offset calculation based on current index
       const offset = (targetIndex * (cardWidth + cardGap)) - (window.innerWidth / 2 - halfCardWidth);
 
       gsap.to(cards, {
@@ -404,7 +402,6 @@
         ease: "power1.inOut"
       });
 
-      // Enlarge centered card
       cardItems.forEach((card, index) => {
         if (index === targetIndex) {
           gsap.to(card, { scale: 1.1, duration: 0.5 });
@@ -456,32 +453,38 @@
         <p style="font-size: 28px; font-weight: bold; color:#0a66c2;">Contact me!</p>
       </div>
       <div class="socials" style="display: flex; justify-content: center; margin-bottom: 20px;">
+        <a href="https://www.instagram.com/nikdaele/">
         <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
           <span class="social-ico instagram-gradient" style="font-size: 14px; color: pink; margin-right: 8px;">
             <i class="ion-social-instagram"></i>
           </span>
           <span class="social-text instagram-gradient-text" style="font-size: 14px; color: pink;">Instagram</span>
         </div>
-
+      </a>
+      <a href="https://www.linkedin.com/in/nikolai-daelemans-808076257/">
         <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
           <span class="social-ico" style="font-size: 14px; color: #0a66c2; margin-right: 8px;">
             <i class="ion-social-linkedin"></i>
           </span>
           <span class="social-text" style="font-size: 14px; color: #0a66c2;">LinkedIn</span>
         </div>
-
+      </a>
+      <a href="https://www.instagram.com/nikdaele/">
         <div class="social-box" style="display: flex; align-items: center;">
           <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-right: 8px;">
             <i class="ion-social-twitter"></i>
           </span>
           <span class="social-text" style="font-size: 14px; color: #1DA1F2;">Twitter</span>
         </div>
+      </a>
+        <a href="https://www.instagram.com/nikdaele/">
         <div class="social-box" style="display: flex; align-items: center;">
           <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-left: 16px;">
             <i class="ion-android-mail"></i>
           </span>
           <span class="social-text" style="font-size: 14px; color: #1DA1F2; margin-left: 8px;">nikdaele@gmail.com</span>
         </div>
+      </a>
       </div>
 
       <div class="monitor" style="margin-top: 3.5em;">
@@ -542,31 +545,28 @@
         scale: 1,
       });
       ScrollTrigger.create({
-        trigger: ".laptop3d", // The laptop element
-        start: "top 80%", // When the top of the laptop reaches 80% of the viewport height
+        trigger: ".laptop3d", 
+        start: "top 80%",
         onEnter: () => {
-          // Add class to trigger the CSS animations
           document.querySelector('.laptop3d').classList.add('animate-laptop');
         },
       });
-
-      // Scroll-triggered zoom with limited scroll range
       gsap.to(".container-laptop", {
-        scale: 2, // Zoom 3x
+        scale: 2,
         ease: "none",
         y: "80px",
         scrollTrigger: {
           trigger: ".container-laptop",
-          start: "top top", // Start zoom when the container reaches the top
-          end: "+=2000", // Adjust the end value for the distance the scroll should allow
-          scrub: true,  // Smooth scroll with scrub
-          pin: true,    // Pin the laptop while scrolling
+          start: "top top",
+          end: "+=2000", 
+          scrub: true,
+          pin: true,   
         },
         onLeave: () => {
-          document.body.style.overflow = 'hidden';  // Disable scrolling when animation ends
+          document.body.style.overflow = 'hidden'; 
         },
         onEnterBack: () => {
-          document.body.style.overflow = 'auto';    // Re-enable scrolling when scrolling back
+          document.body.style.overflow = 'auto'; 
         }
 
       });

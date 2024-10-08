@@ -1,21 +1,14 @@
-/*
-  Theme Name: DevFolio
-  Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-  Author: BootstrapMade.com
-  License: https://bootstrapmade.com/license/
-*/
+
 
 /*======================================
 //--//-->   STYLES GENERALES
 ======================================*/
 
-  /* Hide scrollbar for Chrome, Safari and Opera */
 
-body {
-  background-color: #f5f5f5;
-  color: #4e4e4e;
-
+  ::-webkit-scrollbar {
+    display: none;
 }
+
 
 h1,
 h2,
@@ -719,7 +712,7 @@ a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: background 2s ease-in;
+  transition: background 10s ease-in;
   padding: 3px;; /* Smooth transition */
 }
 
@@ -758,6 +751,7 @@ a:hover {
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
   margin-bottom: 3rem;
+  width: 55vw;
 }
 
 .service-box:hover .ico-circle {
@@ -1363,7 +1357,7 @@ footer .credits a {
 }
 
 .blue {
-  background-image: url("/img/consultancy.jpeg");
+  background-image: url("/nikolaidaelemans/img/consultancy.jpeg");
   background-size: cover; /* Use cover to fill the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -1389,7 +1383,7 @@ footer .credits a {
 }
 
 .red {
-  background-image: url("/img/webDesign.jpg");
+  background-image: url("/nikolaidaelemans/img/webDesign.jpg");
   background-size: cover; /* Use cover to fill the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -1432,7 +1426,7 @@ footer .credits a {
 
 .gray {
 
-  background-image: url("/img/laptop.jpg");
+  background-image: url("/nikolaidaelemans/img/laptop.jpg");
   background-size: cover; /* Use cover to fill the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -1457,7 +1451,7 @@ footer .credits a {
 }
 
 .purple {
-  background-image: url("/img/design.jpg");
+  background-image: url("/nikolaidaelemans/img/design.jpg");
   background-size: cover; /* Use cover to fill the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -1482,7 +1476,7 @@ footer .credits a {
 }
 
 .green {
-  background-image: url("/img/laptop2.webp");
+  background-image: url("/nikolaidaelemans/img/laptop2.webp");
   background-size: cover; /* Use cover to fill the entire element */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent the image from repeating */
@@ -1859,4 +1853,102 @@ text {
   background: linear-gradient(45deg, #feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.portfolio-mf-nik {
+  padding: 50px 0;
+}
+
+.container-portfolio-nik {
+  overflow: hidden;
+  padding-top: 20px;
+  height:450px;
+}
+
+#portfolio {
+  background-image: url("/nikolaidaelemans/img/plantwallpaper.jpg");
+  background-size: cover; /* Use cover to fill the entire element */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+
+.cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 300px; 
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cards li {
+  flex: 0 0 auto;
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  width: 500px;
+ 
+}
+
+.cards li img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-bottom: 2px solid #fff;
+  color: #fff;
+}
+
+.cards li h2 {
+  padding: 10px;
+  font-size: 1.1em;
+  text-align: center;
+  color: #fff;
+  text-decoration: 3px underline #0062d3;
+}
+
+.cards li p {
+  text-align: center;
+  padding: 5px 0;
+  color: #fff;
+}
+
+.buttons-portfolio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+
+.header-portfolio{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+}
+
+h3{
+  color: #0062d3;
+  font-size: 3em;
+  font-family:'Times New Roman', Times, serif;
+}
+
+.header-text-portfolio{
+  color: #fff;
+}
+
+.company-container{
+  display: flex;
+  gap: 2px;
+  align-items: center;
+}
+.company-img{
+  border-radius: 20px;
 }

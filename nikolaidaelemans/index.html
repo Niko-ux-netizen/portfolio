@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>DevFolio Bootstrap Template</title>
+  <title>NikTechnic</title>
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
   <meta content="" name="keywords">
   <meta content="" name="description">
@@ -33,8 +33,8 @@
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
       <div class="company-container">
-      <img src="/nikolaidaelemans/img/NtN-nobackground.png" height="70px" width="70px" class="company-img">
-      <a class="navbar-brand js-scroll" href="#page-top">NikTechnic</a>
+        <img src="img/NtN-nobackground.png" height="70px" width="70px" class="company-img">
+        <a class="navbar-brand js-scroll" href="#page-top">NikTechnic</a>
       </div>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
@@ -68,25 +68,31 @@
   </nav>
   <!--/ Nav End /-->
 
+  <canvas id="canvas"></canvas>
+
+
   <!--/ Intro Skew Star /-->
-  <div id="home" class="intro route bg-image" style="background-image: 
-    radial-gradient(circle, rgba(20, 20, 20, 0.1), rgba(20, 20, 20, 1)), 
-    url(img/codePicture.jpg);">
+  <div id="home" class="intro route bg-image">
     <div class="overlay-itro"></div>
     <div class="intro-content display-table">
+
       <div class="table-cell">
         <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="intro-title mb-4">I am Nikolai Daelemans</h1>
-          <p class="intro-subtitle"><span class="text-slider-items">Web Developer,Web Designer,Frontend
-              Developer,Freelancer</span><strong class="text-slider"></strong></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+          <div class="hero">
+            <h1 class="intro-title mb-4">Nikolai Daelemans</h1>
+            <p class="intro-subtitle">
+              <span class="text-slider-items">Web Developer,Web Designer,Frontend Developer,Freelancer</span>
+              <strong class="text-slider"></strong>
+            </p>
+          </div>
+
         </div>
       </div>
     </div>
   </div>
-  <!--/ Intro Skew End /-->
 
+  <script src="./js/app.js"></script>
+<!-- ABOUT -->
   <section id="about" class="about-mf sect-pt4 route" style="background-color: black">
     <div class="container">
       <div class="row">
@@ -94,18 +100,17 @@
           <div class="box-shadow-full" style="border-radius: 10px;">
             <div class="row">
               <div class="col-md-6">
-                <div class="row">
+                <div class="row about-container">
                   <div class="col-sm-6 col-md-5">
                     <div class="about-img">
-                      <img src="img/Profile.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      <img src="img/profile1.png" class="profile-image" alt="Profile Image">
                     </div>
                   </div>
                   <div class="col-sm-6 col-md-7">
                     <div class="about-info">
                       <p><span class="title-s">Name: </span> <span>Nikolai Daelemans</span></p>
                       <p><span class="title-s">Profile: </span> <span>full stack developer</span></p>
-                      <p><span class="title-s">Email: </span> <span>Nikolai@NikTechnic.com</span></p>
-                      <p><span class="title-s">Phone: </span> <span>####</span></p>
+                      <p><span class="title-s">Email: </span> <span>Nikdaele@gmail.com</span></p>
                     </div>
                   </div>
                 </div>
@@ -119,6 +124,7 @@
                   <p class="lead" style="height: 450px; overflow-y: scroll;">
                     Hello! My name is Nikolai Daelemans, and I am currently a computer science student with a deep
                     passion for technology and innovation.
+                    I speak Dutch, English, French and Luxembourgish - German to an extent.
                     My academic journey has allowed me to explore various facets of computing, from software development
                     to artificial intelligence.
                     I thrive on tackling challenging projects that push my boundaries and expand my knowledge.
@@ -141,36 +147,65 @@
               <div class="col-md-6">
                 <!---->
                 <div class="skills-mf">
-                  <div class="skill-item">
-                    <div class="circular-progress" data-percentage="85">
+                  <div class="skill-item-1">
+                    <div class="circular-progress" data-percentage="65">
                       <div class="inner-circle"></div>
                       <span class="inner-percentage">0%</span>
                     </div>
                     <p class="title-s">HTML</p>
                   </div>
 
-                  <div class="skill-item">
-                    <div class="circular-progress" data-percentage="75">
+                  <div class="skill-item-2">
+                    <div class="circular-progress" data-percentage="65">
                       <div class="inner-circle"></div>
                       <span class="inner-percentage">0%</span>
                     </div>
                     <p class="title-s">CSS</p>
                   </div>
 
-                  <div class="skill-item">
+                  <div class="skill-item-3">
                     <div class="circular-progress" data-percentage="50">
                       <div class="inner-circle"></div>
                       <span class="inner-percentage">0%</span>
                     </div>
-                    <p class="title-s">c++     </p>
+                    <p class="title-s">c++</p>
                   </div>
 
-                  <div class="skill-item">
-                    <div class="circular-progress" data-percentage="90">
+                  <div class="skill-item-4">
+                    <div class="circular-progress" data-percentage="78">
                       <div class="inner-circle"></div>
                       <span class="inner-percentage">0%</span>
                     </div>
                     <p class="title-s">JavaScript</p>
+                  </div>
+
+                  <div class="skill-item-5">
+                    <div class="circular-progress" data-percentage="75">
+                      <div class="inner-circle"></div>
+                      <span class="inner-percentage">0%</span>
+                    </div>
+                    <p class="title-s">Python</p>
+                  </div>
+                  <div class="skill-item-6">
+                    <div class="circular-progress" data-percentage="40">
+                      <div class="inner-circle"></div>
+                      <span class="inner-percentage">0%</span>
+                    </div>
+                    <p class="title-s">Ruby</p>
+                  </div>
+                  <div class="skill-item-7">
+                    <div class="circular-progress" data-percentage="50">
+                      <div class="inner-circle"></div>
+                      <span class="inner-percentage">0%</span>
+                    </div>
+                    <p class="title-s">Pytorch/TensorFlow</p>
+                  </div>
+                  <div class="skill-item-8">
+                    <div class="circular-progress" data-percentage="60">
+                      <div class="inner-circle"></div>
+                      <span class="inner-percentage">0%</span>
+                    </div>
+                    <p class="title-s">Postgresql</p>
                   </div>
                 </div>
                 <!---->
@@ -181,8 +216,10 @@
       </div>
     </div>
   </section>
-
-
+</div>
+<!-- ABOUT -->
+<!-- SERVICES -->
+<section>
   <div id="service" class="container1">
 
     <div class="panel blue">
@@ -197,7 +234,8 @@
         <div class="service-content">
           <h2 class="s-title">Web Design</h2>
           <p class="s-description text-center">
-            Transforming ideas into stunning Front-end projects that engage and convert. Let’s create your online presence together!
+            Transforming ideas into stunning Front-end projects that engage and convert. Let’s create your online
+            presence together!
           </p>
         </div>
       </div>
@@ -210,9 +248,9 @@
           <span class="ico-circle"><i class="ion-code-working"></i></span>
         </div>
         <div class="service-content">
-          <h2 class="s-title">Web Development</h2>
+          <h2 class="s-title">Software Engineering</h2>
           <p class="s-description text-center">
-            Building robust, scalable websites that perform flawlessly. Your vision, coded with quality.
+            Building robust code with quality for any purpous. Let me help you engineer your idea's into the real world!
           </p>
         </div>
       </div>
@@ -224,9 +262,10 @@
           <span class="ico-circle"><i class="ion-android-phone-portrait"></i></span>
         </div>
         <div class="service-content">
-          <h2 class="s-title">Responsive Design</h2>
+          <h2 class="s-title">AI Engineering</h2>
           <p class="s-description text-center">
-            Seamlessly adapts to any device, ensuring an optimal user experience everywhere.
+            With a passion for the rising technologies in AI, I'm thrilled to work on data-science models for
+            predicting, calculating and automating systems you require!
           </p>
         </div>
       </div>
@@ -246,7 +285,7 @@
       </div>
     </section>
   </div>
-
+</section>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
   <script>
@@ -255,75 +294,90 @@
 
       const tl = gsap.timeline();
 
-      tl.from(".red", { xPercent: -100 })
-        .from(".gray", { xPercent: 100 })
-        .from(".purple", { yPercent: 100 })
-        .from(".green", { yPercent: -100 });
+      tl.from(".red", { yPercent: -100, ease: "power2.out" })
+        .from(".gray", { xPercent: -100, ease: "power2.out" })
+        .from(".purple", { yPercent: 100, ease: "power2.out" })
+        .from(".green", { xPercent: -100, ease: "power2.out" });
 
-      ScrollTrigger.create({
-        animation: tl,
-        trigger: ".container1",
-        start: "top top",
-        end: "+=4000",
-        scrub: true,
-        pin: true,
+      ScrollTrigger.matchMedia({
+        // Desktop
+        "(min-width: 768px)": function () {
+          ScrollTrigger.create({
+            animation: tl,
+            trigger: ".container1",
+            start: "top top",
+            end: "+=5000",
+            scrub: true,
+            pin: true,
+            anticipatePin: 1,
+          });
+        },
+
+        // Mobile
+        "(max-width: 767px)": function () {
+          ScrollTrigger.create({
+            animation: tl,
+            trigger: ".container1",
+            start: "top top",
+            end: "+=3000",
+            scrub: true,
+            pin: true,
+            pinSpacing: "margin",
+            anticipatePin: 1,
+          });
+        }
       });
-
     });
+
   </script>
 
+<!-- SERVICES -->
 
-  <div id="work" class="section-counter paralax-mf bg-image" style="background-image: url(img/counters-bg.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-4 col-lg-4">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">3</p>
-              <span class="counter-text">YEARS OF EXPERIENCE</span>
-            </div>
-          </div>
+<!-- EXPERIENCE -->
+<section>
+  <div class="experience">
+    <div class="experience-container">
+      <div class="counter-box pt-4 pt-md-0">
+        <div class="counter-ico">
+          <span class="ico-circle"><i class="ion-ios-calendar-outline"></i></span>
         </div>
-        <div class="col-sm-4 col-lg-4">
-          <div class="counter-box">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">6</p>
-              <span class="counter-text">PROJECTS COMPLETED</span>
-            </div>
-          </div>
+        <div class="counter-num">
+          <p class="counter">3</p>
+          <span class="counter-text">YEARS OF EXPERIENCE</span>
         </div>
-        <!-- <div class="col-sm-3 col-lg-3">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ios-people"></i></span>
-            </div>
-            <div class="counter-num">
-              <p class="counter">2</p>
-              <span class="counter-text">TOTAL CLIENTS</span>
-            </div>
-          </div>
-        </div> -->
-        <div class="col-sm-4 col-lg-4">
-          <div class="counter-box pt-4 pt-md-0">
-            <div class="counter-ico">
-              <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-            </div>
-            <div class="counter-num" style="margin-top: 4em;">
-              <span class="counter-text">BACHELOR COMPUTER SCIENCE</span>
-            </div>
-          </div>
+      </div>
+      <div class="counter-box pt-4 pt-md-0">
+        <div class="counter-ico">
+          <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+        </div>
+        <div class="counter-num">
+          <p class="counter">6</p>
+          <span class="counter-text">PROJECTS COMPLETED</span>
+        </div>
+      </div>
+      <div class="counter-box pt-4 pt-md-0">
+        <div class="counter-ico">
+          <span class="ico-circle"><i class="ion-ios-people"></i></span>
+        </div>
+        <div class="counter-num">
+          <p class="counter">2</p>
+          <span class="counter-text">TOTAL CLIENTS</span>
+        </div>
+      </div>
+      <div class="counter-box pt-4 pt-md-0">
+        <div class="counter-ico">
+          <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+        </div>
+        <div class="counter-num" style="margin-top: 4em;">
+          <span class="counter-text">BACHELOR COMPUTER SCIENCE</span>
         </div>
       </div>
     </div>
   </div>
 
+</section>
+<!-- EXPERIENCE -->
+<!-- PORTFOLIO -->
   <section id="portfolio" class="portfolio-mf-nik sect-pt4 route">
     <div class="header-portfolio">
       <h3>Portfolio</h3>
@@ -334,24 +388,32 @@
 
       <ul class="cards">
         <li>
-          <img src="img/MyPortfolio.png" alt="Portfolio Item" />
-          <h2>My Portfolio</h2>
-          <p>Web Design</p>
+          <a href="#page-top">
+            <img src="img/MyPortfolio.png" alt="Portfolio Item" />
+            <h2>My Portfolio</h2>
+            <p>Web Design</p>
+          </a>
         </li>
         <li>
-          <img src="img/emergentPortfolio.png" alt="Emergent Portfolio" />
-          <h2>Emergent Portfolio</h2>
-          <p>Data Analytics</p>
+          <a href="https://emergentleuven.be/">
+            <img src="img/emergentPortfolio.png" alt="Emergent Portfolio" />
+            <h2>Emergent Portfolio</h2>
+            <p>Data Analytics</p>
+          </a>
         </li>
         <li>
-          <img src="img/ZonesCityPortfolio.png" alt="Zones City" />
-          <h2>Zones City</h2>
-          <p>Smart Cities</p>
+          <a href="https://zones.city/">
+            <img src="img/ZonesCityPortfolio.png" alt="Zones City" />
+            <h2>Zones City</h2>
+            <p>Smart Cities</p>
+          </a>
         </li>
         <li>
-          <img src="img/interconnectPortfolio.png" alt="Interconnect" />
-          <h2>Interconnect</h2>
-          <p>IoT Design</p>
+          <a href="https://interconnectproject.eu/">
+            <img src="img/interconnectPortfolio.png" alt="Interconnect" />
+            <h2>Interconnect</h2>
+            <p>IoT Design</p>
+          </a>
         </li>
         <li>
           <img src="img/campusai.png" alt="Campus AI" />
@@ -369,123 +431,107 @@
       </ul>
 
     </div>
-    <div class="buttons-portfolio">
-      <button id="left-button" class="nav-button">←</button>
-      <button id="right-button" class="nav-button">→</button>
-    </div>
   </section>
+<!-- PORTFOLIO -->
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
-  <script>
-    gsap.registerPlugin(ScrollTrigger);
-
-    const cards = document.querySelector(".cards");
-    const cardItems = document.querySelectorAll('.cards li');
-    const cardGap = 300;
-    let currentIndex = 0;
-
-    updateCardPosition();
-
-    function updateCardPosition() {
-      const totalCards = cardItems.length;
-      const targetIndex = Math.min(Math.max(currentIndex, 0), totalCards - 1);
-      const cardWidth = cardItems[targetIndex].offsetWidth;
-      const halfCardWidth = cardWidth / 2;
-
-      const offset = (targetIndex * (cardWidth + cardGap)) - (window.innerWidth / 2 - halfCardWidth);
-
-      gsap.to(cards, {
-        x: -offset,
-        duration: 0.5,
-        ease: "power1.inOut"
-      });
-
-      cardItems.forEach((card, index) => {
-        if (index === targetIndex) {
-          gsap.to(card, { scale: 1.1, duration: 0.5 });
-        } else {
-          gsap.to(card, { scale: 1, duration: 0.5 });
-        }
-      });
-    }
-
-    document.getElementById('left-button').addEventListener('click', () => {
-      currentIndex--;
-      updateCardPosition();
-    });
-
-    document.getElementById('right-button').addEventListener('click', () => {
-      currentIndex++;
-      updateCardPosition();
-    });
-  </script>
-
-  <!--/ Section Portfolio End /-->
-
-  <!--/ Section Testimonials Star /-->
-  <div class="testimonials paralax-mf bg-image" style="background-image: url(img/starswallpaper.jpg)">
-    <div class="overlay-mf"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div id="testimonial-mf" class="owl-carousel owl-theme">
-            <div class="testimonial-box">
-              <div class="content-test">
-                <p class="description lead">
-                  “Be brave, be curious, be determined, overcome the odds. It can be done”
-                <p> -Steven Hawking</p>
-              </div>
-            </div>
-            </div>
-          </div>
+  <!-- QUOTE -->
+  <section>
+    <div class="quote">
+      <div class="quote-container">
+        <div class="content-test">
+          <p class="description lead">
+            “Be brave, be curious, be determined, overcome the odds. It can be done”
+          <p> -Steven Hawking</p>
         </div>
       </div>
     </div>
-  </div>
-
-  
-
+  </section>
+  <!-- QUOTE -->
+  <!-- CONTACT -->
+  <section>
+    <div class="contact-onmobile">
+      <div class="contact-header" style="text-align: center; margin-bottom: 20px;">
+        <p style="font-size: 28px; font-weight: bold; color:#0a66c2;">Contact me!</p>
+      </div>
+      <div class="socials" style="display: flex; justify-content: center; margin-bottom: 20px; flex-wrap: wrap; gap: 10px;">
+        <a href="https://www.instagram.com/nikdaele/">
+          <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
+            <span class="social-ico instagram-gradient" style="font-size: 14px; color: pink; margin-right: 8px;">
+              <i class="ion-social-instagram"></i>
+            </span>
+            <span class="social-text instagram-gradient-text" style="font-size: 14px; color: pink;">Instagram</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/nikolai-daelemans-808076257/">
+          <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
+            <span class="social-ico" style="font-size: 14px; color: #0a66c2; margin-right: 8px;">
+              <i class="ion-social-linkedin"></i>
+            </span>
+            <span class="social-text" style="font-size: 14px; color: #0a66c2;">LinkedIn</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/nikdaele/">
+          <div class="social-box" style="display: flex; align-items: center;">
+            <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-right: 8px;">
+              <i class="ion-social-twitter"></i>
+            </span>
+            <span class="social-text" style="font-size: 14px; color: #1DA1F2;">Twitter</span>
+          </div>
+        </a>
+        <a href="mailto:nikdaele@gmail.com">
+          <div class="social-box" style="display: flex; align-items: center;">
+            <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-left: 16px;">
+              <i class="ion-android-mail"></i>
+            </span>
+            <span class="social-text" style="font-size: 14px; color: #1DA1F2; margin-left: 8px;">nikdaele@gmail.com</span>
+          </div>
+        </a>
+      </div>
+    </div>
+    
   <div id="contact" class="container-laptop">
+
     <div class="laptop3d">
       <div class="contact-header" style="text-align: center; margin-bottom: 20px;">
         <p style="font-size: 28px; font-weight: bold; color:#0a66c2;">Contact me!</p>
       </div>
       <div class="socials" style="display: flex; justify-content: center; margin-bottom: 20px;">
         <a href="https://www.instagram.com/nikdaele/">
-        <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
-          <span class="social-ico instagram-gradient" style="font-size: 14px; color: pink; margin-right: 8px;">
-            <i class="ion-social-instagram"></i>
-          </span>
-          <span class="social-text instagram-gradient-text" style="font-size: 14px; color: pink;">Instagram</span>
-        </div>
-      </a>
-      <a href="https://www.linkedin.com/in/nikolai-daelemans-808076257/">
-        <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
-          <span class="social-ico" style="font-size: 14px; color: #0a66c2; margin-right: 8px;">
-            <i class="ion-social-linkedin"></i>
-          </span>
-          <span class="social-text" style="font-size: 14px; color: #0a66c2;">LinkedIn</span>
-        </div>
-      </a>
-      <a href="https://www.instagram.com/nikdaele/">
-        <div class="social-box" style="display: flex; align-items: center;">
-          <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-right: 8px;">
-            <i class="ion-social-twitter"></i>
-          </span>
-          <span class="social-text" style="font-size: 14px; color: #1DA1F2;">Twitter</span>
-        </div>
-      </a>
+          <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
+            <span class="social-ico instagram-gradient" style="font-size: 14px; color: pink; margin-right: 8px;">
+              <i class="ion-social-instagram"></i>
+            </span>
+            <span class="social-text instagram-gradient-text" style="font-size: 14px; color: pink;">Instagram</span>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/nikolai-daelemans-808076257/">
+          <div class="social-box" style="display: flex; align-items: center; margin-right: 20px;">
+            <span class="social-ico" style="font-size: 14px; color: #0a66c2; margin-right: 8px;">
+              <i class="ion-social-linkedin"></i>
+            </span>
+            <span class="social-text" style="font-size: 14px; color: #0a66c2;">LinkedIn</span>
+          </div>
+        </a>
         <a href="https://www.instagram.com/nikdaele/">
-        <div class="social-box" style="display: flex; align-items: center;">
-          <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-left: 16px;">
-            <i class="ion-android-mail"></i>
-          </span>
-          <span class="social-text" style="font-size: 14px; color: #1DA1F2; margin-left: 8px;">nikdaele@gmail.com</span>
-        </div>
-      </a>
+          <div class="social-box" style="display: flex; align-items: center;">
+            <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-right: 8px;">
+              <i class="ion-social-twitter"></i>
+            </span>
+            <span class="social-text" style="font-size: 14px; color: #1DA1F2;">Twitter</span>
+          </div>
+        </a>
+        <a href="https://www.instagram.com/nikdaele/">
+          <div class="social-box" style="display: flex; align-items: center;">
+            <span class="social-ico" style="font-size: 14px; color: #1DA1F2; margin-left: 16px;">
+              <i class="ion-android-mail"></i>
+            </span>
+            <span class="social-text"
+              style="font-size: 14px; color: #1DA1F2; margin-left: 8px;">nikdaele@gmail.com</span>
+          </div>
+        </a>
       </div>
+      
 
       <div class="monitor" style="margin-top: 3.5em;">
         <div class="monitor-body">
@@ -526,12 +572,11 @@
           <div class="touchpad"></div>
         </div>
       </div>
-      
-    </div>
-    
-  </div>
-  
 
+    </div>
+  </div>
+</div>
+</section>
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
@@ -545,7 +590,7 @@
         scale: 1,
       });
       ScrollTrigger.create({
-        trigger: ".laptop3d", 
+        trigger: ".laptop3d",
         start: "top 80%",
         onEnter: () => {
           document.querySelector('.laptop3d').classList.add('animate-laptop');
@@ -554,25 +599,26 @@
       gsap.to(".container-laptop", {
         scale: 2,
         ease: "none",
-        y: "80px",
+        y: "170px",
         scrollTrigger: {
           trigger: ".container-laptop",
           start: "top top",
-          end: "+=2000", 
+          end: "+=2000",
           scrub: true,
-          pin: true,   
+          pin: true,
         },
         onLeave: () => {
-          document.body.style.overflow = 'hidden'; 
+          document.body.style.overflow = 'hidden';
         },
         onEnterBack: () => {
-          document.body.style.overflow = 'auto'; 
+          document.body.style.overflow = 'auto';
         }
 
       });
     });
   </script>
-  </div>
+
+  <!-- CONTACT -->
 
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
   <div id="preloader"></div>

@@ -150,8 +150,3 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
   });
   
-
-
-
-
-

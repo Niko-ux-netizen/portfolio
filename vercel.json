@@ -1,7 +1,7 @@
 {
-    "version": 2,
-    "public": true,
-    "routes": [
-      { "src": "/(.*)", "dest": "/index.html" }
-    ]
-  }
+  "version": 2,
+  "routes": [
+    { "src": "/(.*\\.png|.*\\.jpg|.*\\.js|.*\\.css|.*\\.webp|.*\\.svg)", "dest": "/$1" },
+    { "src": "/(.*)", "dest": "/index.html" }
+  ]
+}
